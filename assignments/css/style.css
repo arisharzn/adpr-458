@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'crumbk';
+    src: url('crumbk.woff') format('woff');
+}
+@font-face {
+    font-family: 'awesome';
+    src: url('awesome.woff') format('woff');
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/flow.png');
+    background-size: cover;
+    size-adjust: 50%;
+    background-color: #ffe6ea;
+    font-family: "awesome", sans-serif;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px;
+    gap: 40px;
+}
+.heroImage img {
+    width: 700px;
+    height: auto;
+}
+
+.heroText h1 {
+    font-size: 200px; 
+     font-family: 'crumbk', sans-serif;
+    color: #ff4500; 
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+     line-height: 1;
+}
+
+.heroText p {
+    font-size: 25px;
+    color: #6b0f1a;
+    line-height: 2;
+    max-width: 500px;
+}
+
+.photographySection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 60px;
+    background-color: #ffe6ea;
+}
+
+.photoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 20px;
+}
+
+.photoGrid img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.photoText h2 {
+    font-size: 120px;
+    color: #ff4500;
+    font-family: 'crumbk', sans-serif;
+    margin-bottom: 20px;
+}
+
+.photoText p {
+    max-width: 400px;
+    font-size: 25px;
+    color: #6b0f1a;
+    line-height: 2;
+}
