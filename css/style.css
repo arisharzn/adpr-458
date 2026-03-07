@@ -80,3 +80,18 @@ body {
     color: #6b0f1a;
     line-height: 2;
 }
+
+.btn-home a{
+    height: 100%;
+    width: 100%;
+}
+.btn-home {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
