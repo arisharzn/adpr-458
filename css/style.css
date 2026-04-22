@@ -159,7 +159,7 @@ img {
 .designText h2 {
     margin-bottom: 1.25rem;
     font-family: 'crumbk', sans-serif;
-    font-size: clamp(3rem, 8vw, 7.5rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     color: var(--blue);
 }
 
@@ -314,7 +314,7 @@ a p {
 .ContactSection h2 {
     margin-bottom: 1.25rem;
     font-family: 'crumbk', sans-serif;
-    font-size: clamp(3rem, 8vw, 7.5rem);
+font-size: clamp(2rem, 6vw, 4rem);
     color: var(--blue);
 }
 
@@ -428,9 +428,12 @@ section {
     transform: scale(1.05);
 }
 
-/*какаято хуйня непонятная*/
+/*значения для телефона*/
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+    h1 {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+    }
     .portfolio {
         width: min(94vw, 36rem);
         min-height: 65vh;
@@ -701,7 +704,7 @@ width: 33vw;
   width: 50vw;
     z-index: 1;
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .hero-hobby {
         min-height: auto;
         padding: 2rem 1rem 3rem;
@@ -713,13 +716,17 @@ width: 33vw;
         gap: 2rem;
     }
 
-    .hero-hobby__text h1 {
+    .hero-hobby__text {
         font-size: clamp(1.8rem, 8vw, 3rem);
+        position: relative;
+    width: 100%;
+    right: auto;
+    top: auto;
     }
 
     .hero-hobby__left img,
     .hero-hobby__right img {
+        position: relative;
         max-width: 100%;
     }
 }
-/* контейнер для стрелки */
