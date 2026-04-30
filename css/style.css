@@ -85,10 +85,13 @@ img {
     right: 6%;
 }
 
-.label:hover,
+.label:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
 .star:hover,
 .mic:hover {
-    transform: scale(1.08) rotate(-3deg);
+    transform: scale(1.04);
 }
 
 /* about me */
@@ -184,18 +187,18 @@ img {
 /* стрелки ставим именно под текстом */
 .arrowButtons {
     position: absolute;
-    top: 100%;          /* сразу под блоком текста */
+    top: 100%;           
     left: 0;
-    width: 520px;       /* расстояние между левой и правой стрелкой */
+    width: 520px;       
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;   /* отступ от текста вниз */
+    margin-top: 40px;   
 }
 
 /* маленькие иконки */
 .navArrow img {
-    width: 26px;        /* маленький размер стрелок */
+    width: 26px;        
     height: auto;
     display: block;
 }
@@ -203,18 +206,16 @@ img {
 .navArrow {
     display: block;
 }
-/* novaya hyinya*/ 
-/* текст + стрелки как на скрине */
+ 
 .photoText,
 .videoText,
 .socialText,
 .designText {
     position: relative;
     width: min(38rem, 40vw);
-    padding-bottom: 7rem; /* место под стрелки */
+    padding-bottom: 7rem;
 }
 
-/* стрелки под текстом, по ширине текстового блока */
 .photoText .arrowButtons,
 .videoText .arrowButtons,
 .socialText .arrowButtons,
@@ -231,7 +232,6 @@ img {
     align-items: center;
 }
 
-/* размер стрелок */
 .photoText .navArrow img,
 .videoText .navArrow img,
 .socialText .navArrow img,
@@ -351,6 +351,16 @@ font-size: clamp(2rem, 6vw, 4rem);
 .resumeButton:hover {
     background-color: var(--orange);
 }
+.emailButton,
+.resumeButton {
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.emailButton:hover,
+.resumeButton:hover {
+    background-color: var(--orange);
+    transform: translateY(-4px) rotate(-1deg);
+}
 
 .contactLinks {
     display: flex;
@@ -402,9 +412,14 @@ section {
 }
 
 .item a {
+    display: block;
     text-decoration: none;
     color: #284EA6;
     font-size: clamp(1rem, 1.8vw, 1.25rem);
+}
+.item span {
+    display: block;
+    margin-top: 0.75rem;
 }
 
 .item a:hover {
@@ -683,7 +698,7 @@ width: min(34rem, 32vw);
     margin: 0;
     font-family: 'crumbk', sans-serif;
    font-size: clamp(1.35rem, 2.4vw, 3rem);
-    line-height: 0.95;
+    line-height: 1.15;
     text-transform: uppercase;
     color: #284EA6;
     text-align: center;
